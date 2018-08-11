@@ -6,64 +6,10 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <script async>
-      rewireLoggingToElement(
-    () => document.getElementById("log"),
-    () => document.getElementById("log-container"), true);
-
-function rewireLoggingToElement(eleLocator, eleOverflowLocator, autoScroll) {
-    fixLoggingFunc('log');
-    fixLoggingFunc('debug');
-    fixLoggingFunc('warn');
-    fixLoggingFunc('error');
-    fixLoggingFunc('info');
-
-    function fixLoggingFunc(name) {
-        console['old' + name] = console[name];
-        console[name] = function(...arguments) {
-            const output = produceOutput(name, arguments);
-            const eleLog = eleLocator();
-
-            if (autoScroll) {
-                const eleContainerLog = eleOverflowLocator();
-                const isScrolledToBottom = eleContainerLog.scrollHeight - eleContainerLog.clientHeight <= eleContainerLog.scrollTop + 1;
-                eleLog.innerHTML += output + "<br>";
-                if (isScrolledToBottom) {
-                    eleContainerLog.scrollTop = eleContainerLog.scrollHeight - eleContainerLog.clientHeight;
-                }
-            } else {
-                eleLog.innerHTML += output + "<br>";
-            }
-
-            console['old' + name].apply(undefined, arguments);
-        };
-    }
-
-    function produceOutput(name, arguments) {
-        return arguments.reduce((output, arg) => {
-            return output +
-                "<span class=\"log-" + (typeof arg) + " log-" + name + "\">" +
-                    (typeof arg === "object" && (JSON || {}).stringify ? JSON.stringify(arg) : arg) +
-                "</span>&nbsp;";
-        }, '');
-    }
-}
-      </script>
-    <style amp-custom>
-#log-container { overflow: auto; height: 150px; }
-
-.log-warn { color: orange }
-.log-error { color: red }
-.log-info { color: skyblue }
-.log-log { color: silver }
-
-.log-warn, .log-error { font-weight: bold; }
-      </style>
+    
   </head>
   <body>
-    <h1>Hello World</h1>
-    <div id="log-container">
-  <pre id="log"></pre>
-</div>
+    <img height= width= src="https://github.com/heyitguyfixit/thegatheringocala.com/raw/master/logo_transparent.png"></img>
+    <h1>Love God, Love People, No Matter What</h1>
   </body>
 </html>
