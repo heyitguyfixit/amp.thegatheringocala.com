@@ -40,6 +40,9 @@
       #header {
         width: 100%;
         height: 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
       }
       a {
         text-decoration: none;
@@ -51,12 +54,15 @@
       }
       #menuToggle {
         display: block;
-        position: relative;
-        top: 50px;
-        left: 50px; 
+        position: absolute;
+        top: 10px;
+        left: 10px; 
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
+        width: 20px;
+        height: 20px;
+        padding: 13px 9px;
       }
       #menuToggle input {
         display: block;
@@ -72,14 +78,15 @@
       }
       #menuToggle span {
         display: block;
-        width: 33px;
-        height: 4px;
-        margin-bottom: 5px;
-        position: relative;  background: #cdcdcd;
-        border-radius: 3px;  z-index: 1;  transform-origin: 4px 0px;
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    opacity 0.55s ease;
+        width: 100%;
+        height: 2px;
+        margin-bottom: 3.0px;
+        position: relative;
+        background: rgba(102, 102, 102, 1);
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 3.2px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
       }
       #menuToggle span:first-child {
         transform-origin: 0% 0%;
@@ -121,6 +128,9 @@
         display: block;
         margin: 0 auto;
       }
+      #body {
+        margin-top: 70px;
+      }
     </style>
   </head>
   <body>
@@ -144,9 +154,11 @@
           </ul>
         </div>
       </nav>
-      <amp-img id="header-logo" alt="The Gathering" height="70" width="130" src="https://raw.githubusercontent.com/heyitguyfixit/heyitguyfixit.github.io/master/logo_transparent.png"></amp-img>
+      <amp-img id="header-logo" alt="The Gathering" height="70" width="70" src="https://raw.githubusercontent.com/heyitguyfixit/heyitguyfixit.github.io/master/icon_small_transparent.png"></amp-img>
       <!--<h1>Loving God and Loving People... No Matter What!</h1>-->
     </div>
-    <amp-img layout="responsive" alt="The Gathering" height="617" width="960" src="https://raw.githubusercontent.com/heyitguyfixit/heyitguyfixit.github.io/master/main-image.png"></amp-img>
+    <div id="body">
+      <amp-img layout="responsive" alt="The Gathering" height="617" width="960" src="https://raw.githubusercontent.com/heyitguyfixit/heyitguyfixit.github.io/master/main-image.png"></amp-img>
+    </div>
   </body>
 </html>
