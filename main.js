@@ -12,5 +12,6 @@ for (i = 0; i < drop.length; i++) {
         }
     });
 }
-
-document.getElementsByTagName("body")[0].element.setAttribute('style', 'position:initial !important');
+function onload() {
+    document.getElementsByTagName("body")[0].element.setAttribute('style', 'position:initial !important');
+}
