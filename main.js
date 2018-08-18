@@ -13,5 +13,5 @@ for (i = 0; i < drop.length; i++) {
     });
 }
 function onload() {
-    document.getElementsByTagName("body")[0].setAttribute('style', 'position:initial !important');
+    document.getElementsByTagName("body")[0].setAttribute('style', 'position:static !important');
 }
