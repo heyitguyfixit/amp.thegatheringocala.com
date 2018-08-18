@@ -34,6 +34,12 @@
 		<!--style tags-->
 		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 		<style amp-custom>
+			* {
+				transition: all .25s ease-in-out 0ms;
+				-moz-transition: all .25s ease-in-out 0ms;
+				-o-transition: all .25s ease-in-out 0ms;
+				-webkit-transition: all .25s ease-in-out 0ms;
+			}
 			body {
 				padding: 0;
 				background-image: url("./website-bg.png");
@@ -175,7 +181,7 @@
 			}
 			.subnav {
 				padding: 0 18px;
-				display: none;
+				max-height: 0px;
 				overflow: hidden;
 			}
 		</style>
