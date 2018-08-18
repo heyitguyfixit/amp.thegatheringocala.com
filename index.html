@@ -52,12 +52,12 @@
 				z-index: 1;
 				background-color: rgba(255,255,255,0.52);
 			}
-			#menu > li > a {
+			#menu > li > a, .subnav > li > a {
 				text-decoration: none;
 				color: #232323;
 				transition: color 0.3s ease;
 			}
-			#menu > li > a:hover {
+			#menu > li > a:hover, .subnav > li > a:hover {
 				color: green !important;
 			}
 			#menuToggle {
@@ -125,7 +125,7 @@
 				transform: translate(-100%, 0);
 				transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 			}
-			#menu li {
+			#menu li, .subnav li {
 				padding: 10px 0;
 				font-size: 22px;
 			}
@@ -176,7 +176,6 @@
 			.subnav {
 				padding: 0 18px;
 				display: none;
-				background-color: white;
 				overflow: hidden;
 			}
 		</style>
