@@ -14,4 +14,5 @@ for (i = 0; i < drop.length; i++) {
 }
 function onload() {
     document.getElementsByTagName("body")[0].setAttribute('style', 'position:static !important');
+    document.getElementById("menu").setAttribute('style', 'height:'+document.documentElement.clientHeight+'px !important');
 }
