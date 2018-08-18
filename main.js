@@ -5,10 +5,10 @@ for (i = 0; i < drop.length; i++) {
     drop[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var sub = this.nextElementSibling;
-        if (sub.style.display === "block") {
-            sub.style.display = "none";
+        if (sub.style.maxHeight === "1000px") {
+            sub.style.maxHeight = "0px";
         } else {
-            sub.style.display = "block";
+            sub.style.maxHeight = "1000px";
         }
     });
 }
