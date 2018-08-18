@@ -184,6 +184,17 @@
 				max-height: 0px;
 				overflow: hidden;
 			}
+			#footer {
+				position: absolute;
+				height: 100px;
+				width: 100%;
+				bottom: 0;
+				left: 0;
+				background-color: rgba(255,255,255,0.52);
+			}
+			#footer a {
+				margin: 0 auto;
+			}
 		</style>
 	</head>
 	<body>
@@ -213,11 +224,16 @@
 					</ul>
 				</div>
 			</nav>
-			<amp-img id="header-logo" alt="The Gathering" height="71" width="100" src="./logo_small_transparent.PNG"></amp-img>
+			<a href="/"><amp-img id="header-logo" alt="The Gathering" height="71" width="100" src="./logo_small_transparent.PNG"></amp-img></a>
 			<!--<h1>Loving God and Loving People... No Matter What!</h1>-->
 		</div>
 		<div id="content">
-			<amp-img layout="responsive" alt="The Gathering" height="617" width="960" src="./main-image.png"></amp-img>
+			<amp-img layout="responsive" alt="Interest Meeting" height="617" width="960" src="./main-image.png"></amp-img>
+		</div>
+		<div id="footer">
+			<a href="https://facebook.com/tgocala">
+				<amp-img alt="Facebook @tgocala" height="80" width="80" src="./main-image.png"></amp-img>
+			</a>
 		</div>
 	</body>
 </html>
