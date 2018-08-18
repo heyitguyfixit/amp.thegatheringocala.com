@@ -13,4 +13,4 @@ for (i = 0; i < drop.length; i++) {
     });
 }
 
-document.getElementsByTagName("body")[0].style.position = "initial";
+document.getElementsByTagName("body")[0].element.setAttribute('style', 'position:initial !important');
