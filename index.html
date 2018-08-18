@@ -30,6 +30,7 @@
 		<link rel="author" href="https://plus.google.com/102074209787370717585" />
 		<!--script tags-->
 		<script async src="https://cdn.ampproject.org/v0.js"></script>
+		<script async src="/main.js"></script>
 		<!--style tags-->
 		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 		<style amp-custom>
@@ -61,12 +62,12 @@
 			#menuToggle {
 				display: block;
 				position: absolute;
-				top: 23px;
+				top: 32px;
 				left: 23px;
 				-webkit-user-select: none;
 				user-select: none;
 				width: 20px;
-				height: 20px;
+				height: 15px;
 			}
 			#menuToggle input {
 				display: block;
@@ -171,7 +172,7 @@
 			button.accordion.active::after {
 				content: "\2212";
 			}
-			.panel {
+			.subnav {
 				padding: 0 18px;
 				display: none;
 				background-color: white;
@@ -190,15 +191,19 @@
 					<ul id="menu">
 						<li><a href="/">Home</a></li>
 						<li class="menuDropdown">Connect</li>
+						<ul class="subnav">
 							<li><a href="/about">About Us</a></li>
 							<li><a href="/contact">Contact Us</a></li>
 							<li><a href="/projects">Projects</a></li>
 							<li><a href="/giving">Giving</a></li>
+						</ul>
 						<li class="menuDropdown">Discover</li>
+						<ul class="subnav">
 							<li><a href="/life-points">Life Points</a></li>
 							<li><a href="/pastors-and-staff">Pastors and Staff</a></li>
 							<li><a href="/videos">Videos</a></li>
 							<li><a href="/beliefs">What We Believe</a></li>
+						</ul>
 					</ul>
 				</div>
 			</nav>
