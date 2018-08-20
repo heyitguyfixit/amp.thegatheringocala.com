@@ -1,0 +1,5 @@
+# Sitemap is also available on /sitemap.xml
+Sitemap: http://www.thegatheringocala.com/sitemap.xml
+User-agent: *
+Disallow: /neighborhood
+Disallow: /scriptures
