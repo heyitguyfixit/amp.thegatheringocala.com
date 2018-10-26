@@ -36,29 +36,29 @@
 		<style amp-custom>
 			@font-face {
 				font-family: "Antro Vectra";
-				src: url("https://cdn.rawgit.com/heyitguyfixit/font/6d88bd9a/Antro%20Vectra/Antro_Vectra.otf") format("opentype");
+				src: url("https://cdn.rawgit.com/HeyITGuyFixIt/font/6d88bd9a/Antro%20Vectra/Antro_Vectra.otf") format("opentype");
 				unicode-range: U+?????;
 				font-style: normal;
 				font-weight: 400;
 			}
 			@font-face {
 				font-family: "Josefin Sans";
-				src: url("https://cdn.rawgit.com/heyitguyfixit/font/c31f413d/Josefin%20Sans/JosefinSans-Regular.ttf") format("opentype"); /* .ttf */
+				src: url("https://cdn.rawgit.com/HeyITGuyFixIt/font/c31f413d/Josefin%20Sans/JosefinSans-Regular.ttf") format("opentype"); /* .ttf */
 				unicode-range: U+?????;
 			}
 			@font-face {
 				font-family: "Moon Flower";
-				src: url("https://cdn.rawgit.com/heyitguyfixit/font/18990de1/Moon%20Flower/Moon_Flower.eot");
-			    src: url("https://cdn.rawgit.com/heyitguyfixit/font/18990de1/Moon%20Flower/Moon_Flower.ttf") format("truetype"),
-				 url("https://cdn.rawgit.com/heyitguyfixit/font/18990de1/Moon%20Flower/Moon_Flower.woff") format("woff"),
-				 url("https://cdn.rawgit.com/heyitguyfixit/font/18990de1/Moon%20Flower/Moon_Flower.svg") format("svg");
+				src: url("https://cdn.rawgit.com/HeyITGuyFixIt/font/18990de1/Moon%20Flower/Moon_Flower.eot");
+			    src: url("https://cdn.rawgit.com/HeyITGuyFixIt/font/18990de1/Moon%20Flower/Moon_Flower.ttf") format("truetype"),
+				 url("https://cdn.rawgit.com/HeyITGuyFixIt/font/18990de1/Moon%20Flower/Moon_Flower.woff") format("woff"),
+				 url("https://cdn.rawgit.com/HeyITGuyFixIt/font/18990de1/Moon%20Flower/Moon_Flower.svg") format("svg");
 				unicode-range: U+?????;
 				font-style: normal;
 				font-weight: 400;
 			}
 			@font-face {
 				font-family: "Steamwreck";
-				src: url("https://cdn.rawgit.com/heyitguyfixit/font/ae1cae1c/Steamwreck/Steamwreck.otf") format("opentype"); /* .otf */
+				src: url("https://github.com/HeyITGuyFixIt/font/Steamwreck/Steamwreck.otf") format("opentype"); /* .otf */
 				unicode-range: U+?????;
 			}
 			* {
@@ -224,6 +224,11 @@
 			#facebook-icon {
 				margin: 0 auto;
 			}
+			#site {
+				position: relative;
+				height: 100%;
+				width: 100%;
+			}
 			
 			#quote {
 				text-align: center;
@@ -233,45 +238,47 @@
 		</style>
 	</head>
 	<body onload="onload();">
-		<div id="header" class="bottomShadow">
-			<a href="./"><amp-img id="header-logo" alt="The Gathering" height="71" width="100" src="./logo_small_transparent.PNG"></amp-img></a>
-			<nav>
-				<div id="menuToggle">
-					<input type="checkbox" />
-					<span></span>
-					<span></span>
-					<span></span>
-					<ul id="menu">
-						<li><a href="./">Home</a></li>
-						<li class="menuDropdown">Connect</li>
-						<ul class="subnav">
-							<li><a href="./about">About Us</a></li>
-							<li><a href="./contact">Contact Us</a></li>
-							<li><a href="./projects">Projects</a></li>
-							<li><a href="./giving">Giving</a></li>
+		<div id="site">
+			<div id="header" class="bottomShadow">
+				<a href="./"><amp-img id="header-logo" alt="The Gathering" height="71" width="100" src="./logo_small_transparent.PNG"></amp-img></a>
+				<nav>
+					<div id="menuToggle">
+						<input type="checkbox" />
+						<span></span>
+						<span></span>
+						<span></span>
+						<ul id="menu">
+							<li><a href="./">Home</a></li>
+							<li class="menuDropdown">Connect</li>
+							<ul class="subnav">
+								<li><a href="./about">About Us</a></li>
+								<li><a href="./contact">Contact Us</a></li>
+								<li><a href="./projects">Projects</a></li>
+								<li><a href="./giving">Giving</a></li>
+							</ul>
+							<li class="menuDropdown">Discover</li>
+							<ul class="subnav">
+								<li><a href="./life-points">Life Points</a></li>
+								<li><a href="./pastors-and-staff">Pastors and Staff</a></li>
+								<li><a href="./videos">Videos</a></li>
+								<li><a href="./beliefs">What We Believe</a></li>
+							</ul>
 						</ul>
-						<li class="menuDropdown">Discover</li>
-						<ul class="subnav">
-							<li><a href="./life-points">Life Points</a></li>
-							<li><a href="./pastors-and-staff">Pastors and Staff</a></li>
-							<li><a href="./videos">Videos</a></li>
-							<li><a href="./beliefs">What We Believe</a></li>
-						</ul>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		<div id="content">
-			<p id="quote">“Some wish to live within the sound of a church and chapel bell,<br>
-I want to run a rescue shop within a yard of Hell.”<br>
-C.T. Studd (Missionary)</p>
-			<amp-img layout="responsive" alt="Prayer Meeting" height="680" width="382" src="./main-image.png"></amp-img>
-			<amp-img layout="responsive" alt="The Gathering Map" height="880" width="917" src="./TG Map.png"></amp-img>
-		</div>
-		<div id="footer">
-			<a href="https://facebook.com/tgocala">
-				<amp-img id="facebook-icon" alt="Facebook @tgocala" height="80" width="80" src="./facebook-icon.png"></amp-img>
-			</a>
+					</div>
+				</nav>
+			</div>
+			<div id="content">
+				<p id="quote">“Some wish to live within the sound of a church and chapel bell,<br>
+	I want to run a rescue shop within a yard of Hell.”<br>
+	C.T. Studd (Missionary)</p>
+				<amp-img layout="responsive" alt="Prayer Meeting" height="680" width="382" src="./main-image.png"></amp-img>
+				<amp-img layout="responsive" alt="The Gathering Map" height="880" width="917" src="./TG Map.png"></amp-img>
+			</div>
+			<div id="footer">
+				<a href="https://facebook.com/tgocala">
+					<amp-img id="facebook-icon" alt="Facebook @tgocala" height="80" width="80" src="./facebook-icon.png"></amp-img>
+				</a>
+			</div>
 		</div>
 	</body>
 </html>
